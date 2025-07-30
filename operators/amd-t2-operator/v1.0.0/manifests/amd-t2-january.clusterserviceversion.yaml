@@ -13,7 +13,11 @@ metadata:
               "app.kubernetes.io/instance": "sriovt2card-sample",
               "app.kubernetes.io/managed-by": "kustomize",
               "app.kubernetes.io/name": "sriovt2card",
-              "app.kubernetes.io/part-of": "amd-t2-january"
+              "app.kubernetes.io/part-of": "amd-t2-january",
+              "features.operators.openshift.io/disconnected": "true"
+              "features.operators.openshift.io/proxy-aware": "true"
+              "features.operators.openshift.io/cnf": "false"
+              "features.operators.openshift.io/fips-compliant": "false"
             },
             "name": "sriovt2card",
             "namespace": "amd-t2"
