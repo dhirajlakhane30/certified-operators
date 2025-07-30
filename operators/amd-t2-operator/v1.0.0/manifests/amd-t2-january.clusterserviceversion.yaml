@@ -13,11 +13,7 @@ metadata:
               "app.kubernetes.io/instance": "sriovt2card-sample",
               "app.kubernetes.io/managed-by": "kustomize",
               "app.kubernetes.io/name": "sriovt2card",
-              "app.kubernetes.io/part-of": "amd-t2-january",
-              "features.operators.openshift.io/disconnected": "true"
-              "features.operators.openshift.io/proxy-aware": "true"
-              "features.operators.openshift.io/cnf": "false"
-              "features.operators.openshift.io/fips-compliant": "false"
+              "app.kubernetes.io/part-of": "amd-t2-january"
             },
             "name": "sriovt2card",
             "namespace": "amd-t2"
@@ -41,6 +37,10 @@ metadata:
     createdAt: "2025-07-14T09:46:54Z"
     operators.operatorframework.io/builder: operator-sdk-v1.35.0
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v4
+    features.operators.openshift.io/disconnected: true
+    features.operators.openshift.io/proxy-aware": true
+    features.operators.openshift.io/cnf": false
+    features.operators.openshift.io/fips-compliant": false
   name: amd-t2-january.v0.0.1
   namespace: placeholder
 spec:
